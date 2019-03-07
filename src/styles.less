@@ -5,6 +5,8 @@
 // @import '~ngx-weui/index';
 @import '~node_modules/weui/src/style/weui.less';
 @import '~node_modules/ngx-weui/index.less';
+@import './assets/style/base.less';
+@import './assets/style/font-awasome.less';
 
 // [自定义主题](https://cipchk.github.io/ngx-weui/#/docs/style)
 // @weuiFontDefault: "Helvetica Neue";
@@ -13,3 +15,7 @@
 @weuiBtnPrimaryActiveBg:darken(#0099ff, 10%);
 
 /* You can add global styles to this file, and also import other style files */
+// override weui style - gaoyuan//
+.weui-grid__icon{
+    text-align: center !important;
+}
