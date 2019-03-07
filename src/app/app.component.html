@@ -1,0 +1,11 @@
+<div class="weui-article">
+  <weui-button (click)="successToast.onShow()">Toast From Component</weui-button>
+  <weui-button (click)="srv.loading()">Toast From Service</weui-button>
+  
+  <weui-toast #success></weui-toast>
+
+  <h2 style="margin: 32px 0 0 0">分页器</h2>
+  <weui-pagination [mode]="'pointer'" [current]="1" [total]="5"></weui-pagination>
+</div>
+
+<router-outlet></router-outlet>
