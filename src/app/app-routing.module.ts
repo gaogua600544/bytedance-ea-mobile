@@ -10,13 +10,14 @@ const routes: Routes = [
   },
   {
     path: 'app',
-    // component: Core,
-    // canActivate: [AuthorizationService],
-    // canActivateChild: [AuthorizationService],
     children:
       [
         {
           path: '',
+          component: HomeComponent
+        },
+        {
+          path: 'home',
           component: HomeComponent
         }
       ]
@@ -24,7 +25,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

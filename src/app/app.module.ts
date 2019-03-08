@@ -13,11 +13,13 @@ import { LayoutModule } from './layout/layout.module';
 import { AppComponent } from './app.component';
 import { FundComponent } from './fund/fund.component';
 import { HomeComponent } from './home/home.component';
+import { CostComponent } from './cost/cost.component';
 @NgModule({
    declarations: [
       AppComponent,
       FundComponent,
-      HomeComponent
+      HomeComponent,
+      CostComponent
    ],
    imports: [
       BrowserModule,
